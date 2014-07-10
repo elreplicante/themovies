@@ -1,4 +1,4 @@
-module.exports = function(grunt) { 
+module.exports = function(grunt) {
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
 
@@ -26,7 +26,7 @@ module.exports = function(grunt) {
 		  }
 		},
 
-		uglify: {	
+		uglify: {
 		    js: {
 		      files: {
 		        'public/js/<%= pkg.name %>.min.js': 'public/js/*.js'
@@ -51,4 +51,5 @@ module.exports = function(grunt) {
 
 	grunt.registerTask('default', ['clean', 'concat', 'uglify', 'copy']);
 
-}
+
+};

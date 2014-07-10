@@ -1,19 +1,13 @@
 <!doctype html>
 <html>
 <head>
-	<meta charset="utf-8"> 
+	<meta charset="utf-8">
 	<link rel="stylesheet" href="css/reset.css" type="text/css" />
 	<link rel="stylesheet" href="css/fonts.css" type="text/css" />
 	<link rel="stylesheet" href="css/grid.css" type="text/css" />
 	<link rel="stylesheet" href="css/styles.css" type="text/css" />
-	<script type="text/javascript" src="js/quo.js"></script>
-	<script type="text/javascript" src="js/the-movies.min.js"></script>
-	<script type="text/javascript">
-		storage.model("location", "position");
-		showCurrentLocation();
-	</script>
 </head>
-<body>      
+<body>
 	<header class="header">
 		<div class="header-container clearfix">
 			<div class="pull-left">
@@ -50,7 +44,9 @@
 		</nav>
 
 		<article class="carousel-container">
-			<img src="images/img-carousel.jpg" alt="imagen" />
+			<img src="public/images/img-carousel.jpg" alt="imagen" class="active" />
+			<img src="public/images/img-carousel-2.jpg" alt="imagen" />
+			<img src="public/images/img-carousel-3.jpg" alt="imagen" />
 			<div class="carousel-txt">
 				<header>
 					<h1 class="carousel-txt-header">Ironman <span>la película</span></h1>
@@ -73,8 +69,6 @@
 				<li><a href="#"></a></li>
 				<li><a href="#"></a></li>
 				<li><a href="#"></a></li>
-				<li><a href="#"></a></li>
-				<li><a href="#"></a></li>
 			</ul>
 		</nav>
 	</section>
@@ -89,7 +83,7 @@
 					<header class="header-title tooltip-inner">
 						<div class="tooltip tooltip-up"><p>Scarlet Johanson</p></div>
 						<h1>Themovie Snapshot - Latest Photos and Galleries</h1>
-					</header>   
+					</header>
 					<ul class="lst-inline">
 						<li class="tooltip-inner">
 							<div class="tooltip tooltip-down"><p>Scarlet Johanson</p></div>
@@ -101,7 +95,7 @@
 						<li class="tooltip-inner">
 							<img src="images/img-photo.png" />
 						</li>
-						<li class="tooltip-inner"> 
+						<li class="tooltip-inner">
 							<img src="images/img-photo.png" />
 						</li>
 					</ul>
@@ -121,7 +115,7 @@
 						<div class="grid_6 top-news">
 							<header class="top-news-header">
 								<h2><a href="#">‘Star Wars: Episode VII’: J.J. Abrams and Lawrence Kasdan now rewriting screenplay...</a></h2>
-							</header>   
+							</header>
 							<p>‘Star Wars: Episode VII’: J.J. Abrams and Lawrence Kasdan now rewriting screenplay...</p>
 						</div>
 					</div>
@@ -278,7 +272,7 @@
 		</div>
 		<footer class="footer">
 			<div class="container">
-				<p class="bottom-logo img-sprite"><a href="#"></a></p>    
+				<p class="bottom-logo img-sprite"><a href="#"></a></p>
 				<nav>
 					<ul class="lst-inline">
 						<li><a href="#">Home</a></li>
@@ -304,5 +298,12 @@
 					</ul>
 				</nav>
 			</footer>
+			<script type="text/javascript" src="public/js/quo.js"></script>
+			<script type="text/javascript" src="public/js/the-movies.min.js"></script>
+			<script type="text/javascript">
+				storage.model("location", "position");
+				showCurrentLocation();
+			</script>
+
 		</body>
 		</html>

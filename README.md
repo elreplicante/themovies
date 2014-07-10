@@ -16,5 +16,9 @@ My project for [Ironhack](http://www.ironhack.com).
 
 * Javascript testing with Jasmine
 
+## TO FIX
+
+* Hover in Left corner on the slider.
+
 
 
